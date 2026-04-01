@@ -1,0 +1,11 @@
+#
+
+hadoop version
+hadoop fs -ls /
+hadoop fs -ls /user
+hadoop fs -ls /user/root
+hadoop fs -ls /
+hadoop fs -mkdir /tmp
+hadoop fs -ls /
+hadoop fs -put /opt/hadoop/LICENSE.txt /tmp
+hadoop fs -ls /tmp

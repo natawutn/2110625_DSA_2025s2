@@ -1,0 +1,9 @@
+services:
+  hadoop:
+    image: mtsrus/hadoop:hadoop3.3.6-hdfs
+    container_name: hdfs
+    ports:
+      - "9870:9870" # HDFS Web UI
+      - "9000:9000" # HDFS RPC
+    environment:
+      - ENSURE_NAMENODE_DIR=/var/hadoop/dfs/name

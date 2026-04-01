@@ -1,0 +1,7 @@
+#
+
+SHOW TABLES;
+CREATE TABLE keyvalue (key INT, value STRING);
+DESCRIBE keyvalue;
+LOAD DATA LOCAL INPATH '/opt/hive/examples/files/kv1.txt' OVERWRITE INTO TABLE keyvalue;
+SELECT * FROM keyvalue;
